@@ -1,0 +1,8 @@
+- name: demo on variables
+  hosts: all
+  vars:
+    url: play.google.com
+  tasks:
+    - name: print the url
+      debug:
+        msg: {{url}} 
