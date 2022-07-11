@@ -4,6 +4,6 @@
     - name: printing a fact variable
       debug:
         msg: "{{ansible_distribution}}"
-    - name: printing mac id 
+    - name: printing the mac id 
       debug:
         msg: "{{ansible_default_ip4.macaddress}}"
