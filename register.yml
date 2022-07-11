@@ -8,9 +8,7 @@
    - name: printing uptime
      debug:
        msg: "{{out.stdout}}"
-   - name: printing output
-     debug:
-       msg: "{{out}}"
+   
     - name: declare variable
       set_facts:
          status: "{{out.rc}}"
