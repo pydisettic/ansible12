@@ -9,9 +9,9 @@
      debug:
        msg: "{{out.stdout}}"
    
-    - name: declare variable
-      set_facts:
-         status: "{{out.rc}}"
-    - name: printing uptime status code
-      debug:
-        msg: "status of uptime : {{status}}"     
+   - name: declare variable
+     set_facts:
+        status: "{{out.rc}}"
+   - name: printing uptime status code
+     debug:
+       msg: "status of uptime : {{status}}"     
