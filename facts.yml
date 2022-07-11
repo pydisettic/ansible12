@@ -6,4 +6,4 @@
         msg: "{{ansible_distribution}}"
     - name: printing the mac id 
       debug:
-        msg: "{{ansible_default_ip4.macaddress}}"
+        msg: "{{ansible_default_ipv4.macaddress}}"
