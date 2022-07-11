@@ -8,6 +8,6 @@
    - name: printing uptime
      debug:
        msg: "{{out.stdout}}"
-    - name: printing output
+   - name: printing output
       debug:
         msg: "{{out}}"
