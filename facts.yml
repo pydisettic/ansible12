@@ -1,0 +1,6 @@
+- name: demo on facts
+  hosts: all
+  tasks:
+    -name: printing a fact variable
+     debug:
+       msg: "{{ansible_distribution}}"
