@@ -1,6 +1,6 @@
 - name: demo on register
   hosts: all
-  task: 
+  tasks: 
    - name: execute shell command
      shell: uptime
      register: out
