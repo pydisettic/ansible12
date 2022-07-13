@@ -6,6 +6,6 @@
       register: out
       ignore_errors: yes
 
-     - name: starting tomcat
-       debug:
-         msg: starting tomcat
+    - name: starting tomcat
+      debug:
+        msg: starting tomcat
