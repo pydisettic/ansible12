@@ -4,6 +4,7 @@
     - name: checking tomcat status
      shell: ps -ef |grep java |grep -v grep
      register: out
+     ignore_errors: yes
 
      - name: starting tomcat
        debug:
