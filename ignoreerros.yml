@@ -1,5 +1,5 @@
 - name: demo on tomcat is running or not
-  hots: all
+  hosts: all
   tasks:
     - name: checking tomcat status
       shell: ps -ef |grep java |grep -v grep
