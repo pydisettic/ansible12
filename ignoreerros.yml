@@ -1,0 +1,10 @@
+- name: demo on tomcat is running or not
+  hots: all
+  tasks:
+    - name: checking tomcat status
+     shell: ps -ef |grep java |grep -v grep
+     register: out
+
+     - name: starting tomcat
+       debug:
+         msg: starting tomcat
