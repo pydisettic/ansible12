@@ -1,7 +1,7 @@
 - name: demo on conditions
   hosts: all
    vars:
-     x: abc
+      x: abc
   tasks:
    - name: run this when os is centos
      debug:
