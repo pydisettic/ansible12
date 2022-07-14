@@ -13,8 +13,8 @@
        msg: hello from centos
      when: ansible_distribution == "Redhat" 
 
-    - name: demo on defined - not defined keywords
-      debug:
-        msg: variable x is defined   
+   - name: demo on defined - not defined keywords
+     debug:
+       msg: variable x is defined   
 
            
