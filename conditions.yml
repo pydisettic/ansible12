@@ -22,6 +22,6 @@
    - name: print me only when action is true
      debug:
        msg: Hi, I was defined with true on action
-      when: action      
+     when: action      
 
            
