@@ -2,6 +2,8 @@
   hosts: all
   vars:
     x: abc
+    action: true
+     
   tasks:
    - name: run this when os is centos
      debug:
@@ -15,6 +17,11 @@
 
    - name: demo on defined - not defined keywords
      debug:
-       msg: variable x is defined   
+       msg: variable x is defined  
+
+   - name: print me only when action is true
+     debug:
+       msg: Hi, I was defined with true on action
+      when: action      
 
            
