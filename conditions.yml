@@ -4,6 +4,6 @@
    - name: run this when os is centos
      debug:
        msg: hello from centos
-     when: ansible_distribution == "CentOS"
+      when: ansible_distribution == "CentOS"
 
            
