@@ -1,5 +1,7 @@
 - name: demo on conditions
   hosts: all
+   vars:
+     x: abc
   tasks:
    - name: run this when os is centos
      debug:
@@ -9,6 +11,10 @@
    - name: run this when os is Redhat
      debug:
        msg: hello from centos
-     when: ansible_distribution == "Redhat"  
+     when: ansible_distribution == "Redhat" 
+
+    - name: demo on defined - not defined keywords
+      debug:
+        msg: variable x is defined   
 
            
