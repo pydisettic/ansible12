@@ -6,7 +6,4 @@
        msg: hello from centos
      when: ansible_distribution == "centos"
 
-    - name: run this when os is ubuntu
-      debug:
-        msg: hello from ubuntu
-      when: ansible_distribution == "debian"       
+           
