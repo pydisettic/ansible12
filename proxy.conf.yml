@@ -1,0 +1,3 @@
+
+proxypass "student" "http://localhost.8080/STUDENT"
+ProxypassReverse "/student" "http://localhost:8080/STUDENT"
