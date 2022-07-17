@@ -1,8 +1,8 @@
 - name: demo on web app db
   hosts: all
-  become:yes
+  become: yes
   tasks:
-    - name: installing HTTPD webserver
+   - name: installing HTTPD webserver
      package:
      name: httpd 
      status: present
