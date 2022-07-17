@@ -5,4 +5,4 @@
     - name: installing HTTPD webserver
       package:
        name: httpd 
-       status: present
+       state: present
