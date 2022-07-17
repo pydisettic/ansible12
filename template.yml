@@ -1,0 +1,8 @@
+- name: demo on template
+  hosts: all
+  become: yes
+  tasks:
+    - name: Copying the proxy file
+      template:
+        src: temp.conf 
+        dest: /home/centos/temp.conf
