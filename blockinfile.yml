@@ -1,0 +1,10 @@
+- name: Demo on Blockinfile
+  hosts: all
+  tasks:
+    - name: demo on adding blocks
+      blockinfile:
+        path: /home/centos/temp.conf
+        block:
+          match user ansible
+          password authentication no
+          
