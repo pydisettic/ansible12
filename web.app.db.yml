@@ -2,7 +2,7 @@
   hosts: all
   become:yes
   tasks:
-   - name: installing HTTPD webserver
+    - name: installing HTTPD webserver
      package:
      name: httpd 
      status: present
