@@ -4,5 +4,5 @@
   tasks:
     - name: installing HTTPD webserver
       package:
-      name: httpd 
-      status: present
+       name: httpd 
+       status: present
