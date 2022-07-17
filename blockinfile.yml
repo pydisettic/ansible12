@@ -3,9 +3,10 @@
   tasks:
     - name: demo on adding blocks
       blockinfile:
-        path: /home/centos/temp.conf
+        path: /home/centos/temporary.conf
+        create: yes
         block:
           match user ansible-agent
           password authentication no
 
-          
+
