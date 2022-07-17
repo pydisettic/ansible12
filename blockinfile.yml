@@ -5,6 +5,7 @@
       blockinfile:
         path: /home/centos/temp.conf
         block:
-          match user ansible
+          match user ansible-agent
           password authentication no
+
           
