@@ -7,3 +7,5 @@
     - name: printing the mac id 
       debug:
         msg: "{{ansible_default_ipv4.macaddress}}"
+
+        # this is test
