@@ -1,22 +1,20 @@
-- name: installing web server
+- name: Installing Webserver
   package:
     name: httpd
-    state: present
 
-- name: Copying the proxy file
+- name: copying proxy file
   copy:
-    src: proxy.conf 
-    dest: /etc/httpd/conf.d/proxy.conf    
+    src: proxy.file
+    dest: /etc/httpd/conf.d/proxy.file
 
-- name: download default index file
-  get_url:
-    url: "{{index_url}}"
-    dest: /var/www/html/index.html   
-
-- name: Start web service httpd
-  service: 
-    name: httpd
-    state: started   
-    enabled: yes 
+- name: Download index file
+  grt_url:
+    url: "{{INDEX_URL}}"
+    dest: /var/www/html/index.html
     
-      
+- name: start web service
+  services:
+    name: httpd
+    state: started
+    enabled: yes    
+
